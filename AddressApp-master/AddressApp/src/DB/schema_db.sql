@@ -1,0 +1,14 @@
+DROP SCHEMA public CASCADE;
+CREATE SCHEMA public;
+
+CREATE TABLE Person
+(
+	CPF CHAR(11) NOT NULL,
+	First_Name VARCHAR(50) NOT NULL,
+	Last_Name VARCHAR(50) NOT NULL,
+    Street VARCHAR(50),
+    City VARCHAR(50),
+    Postal_Code VARCHAR(50),
+    Birthday VARCHAR(10),
+	PRIMARY KEY (CPF)
+);
